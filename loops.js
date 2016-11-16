@@ -34,10 +34,11 @@ function doWhileLoop(array){
   } while  (array.length > 0 && maybeTrue());
 }
 */
+function maybeTrue() {
+    return Math.random() >= 0.5
+}
 function doWhileLoop(array){
 
-  function maybeTrue() {
-      return Math.random() >= 0.5
- } do {array = array.pop} while (array.length > 0 && maybeTrue());
+ do {array = array.pop} while (array.length > 0 && maybeTrue());
  return array
 }
